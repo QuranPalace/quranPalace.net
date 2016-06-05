@@ -1,8 +1,12 @@
 $mainTextColor: #ffffff;
-$mainBackgroundColor: #22819F;
-$mainColor : #22819F;
-$mainColor2 : #77C725;
+// $mainBackgroundColor: #22819F;
+$mainColor : #8cf7be;
+$mainColor2 : #3c3b53;
 $darkBlue : #003768;
+
+$liteFont : QuicksandLight;
+$regularFont : QuicksandRegular;
+$boldFont : QuicksandBold;
 
 @keyframes blink{
     0% { opacity:1; }
@@ -28,8 +32,10 @@ a
 #headerPage
 {
 	width:100%;
-	height: 100%;
+	height: 100vh;
 	display: table;
+	top: 0px;
+	left: 0px;
 	background-position: center center;
 	background-size: cover;
 	background-image: url('/static/image/header.jpg');
@@ -48,6 +54,63 @@ a
 			-webkit-animation: blink 2s infinite;
 			-moz-animation: blink 2s infinite;
 			animation: blink 2s infinite;
+		}
+	}
+}
+body
+{
+	
+}
+#mainPlate
+{
+	top: 100vh;
+	width: 100%;
+	left: 0px;
+	background-color: rgba(0, 59, 83, 0.8);
+}
+#backgroundPlate
+{
+	z-index: -1;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	
+	background-image: url('/static/image/mainBackground.png');
+	background-size: 50vw;
+}
+.parentPlate
+{
+	.title
+	{
+		color: $mainTextColor;
+		font-family: $regularFont;
+		text-align: center;
+		font-size: 2.3rem;
+		margin-bottom: 3rem;
+	}
+}
+
+#introduction
+{
+	background-color: rgba(0, 59, 83, 0.8);
+	.box
+	{
+		width: 70%;
+		margin-bottom: 2rem;
+		img
+		{
+			width: 60%;
+		}
+		.text
+		{
+			text-align: justify;
+			direction: ltr;
+			color: $mainTextColor;
+			font-family: $regularFont;
 		}
 	}
 }
