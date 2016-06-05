@@ -2,7 +2,7 @@ $mainTextColor: #ffffff;
 // $mainBackgroundColor: #22819F;
 $mainColor : #94F3D3;
 $mainColor2 : #3c3b53;
-$liteMainColor2 : #8c8abd;
+$liteMainColor2 : #41a1ca;
 $darkBlue : #003768;
 
 $liteFont : QuicksandLight;
@@ -60,7 +60,7 @@ a
 }
 body
 {
-	background-color: $mainColor;
+	// background-color: $mainColor;
 }
 #mainPlate
 {
@@ -138,9 +138,9 @@ body
 			.avatar
 			{
 				margin: 0 auto;
-				border: 5px solid $liteMainColor2;
-				width: 6rem;
-				height: 6rem;
+				border: 0.5rem solid $liteMainColor2;
+				width: 7rem;
+				height: 7rem;
 				background-position: center center;
 				background-size: cover;
 				border-radius: 50%;
@@ -171,4 +171,25 @@ body
 		}
 	}
 	
+}
+#sponsers
+{
+	background-color: rgba(20,20,20, 0.8);
+	padding-bottom: 5rem;
+	.avatar
+	{
+		margin: 0 auto;
+		border: 0.2rem solid $liteMainColor2;
+		width: 9rem;
+		height: 9rem;
+		background-position: center center;
+		background-size: cover;
+		border-radius: 50%;
+		cursor: pointer;
+		-webkit-transition:0.3s ease all;
+	     -moz-transition:0.3s ease all;
+	      -ms-transition:0.3s ease all;
+	       -o-transition:0.3s ease all;
+	          transition:0.3s ease all;
+	}
 }
