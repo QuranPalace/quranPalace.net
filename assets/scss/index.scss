@@ -1,7 +1,8 @@
 $mainTextColor: #ffffff;
 // $mainBackgroundColor: #22819F;
-$mainColor : #8cf7be;
+$mainColor : #94F3D3;
 $mainColor2 : #3c3b53;
+$liteMainColor2 : #8c8abd;
 $darkBlue : #003768;
 
 $liteFont : QuicksandLight;
@@ -59,7 +60,7 @@ a
 }
 body
 {
-	
+	background-color: $mainColor;
 }
 #mainPlate
 {
@@ -80,7 +81,7 @@ body
 	background-position: bottom left;
 	
 	background-image: url('/static/image/mainBackground.png');
-	background-size: 50vw;
+	background-size: 60vw;
 }
 .parentPlate
 {
@@ -89,14 +90,15 @@ body
 		color: $mainTextColor;
 		font-family: $regularFont;
 		text-align: center;
-		font-size: 2.3rem;
+		font-size: 2.4rem;
+		margin-top: 2.5rem;
 		margin-bottom: 3rem;
 	}
 }
 
 #introduction
 {
-	background-color: rgba(0, 59, 83, 0.8);
+	background-color: rgba(0, 59, 83, 0.7);
 	.box
 	{
 		width: 70%;
@@ -113,4 +115,60 @@ body
 			font-family: $regularFont;
 		}
 	}
+}
+
+#quotes
+{
+	background-color: rgba(0, 59, 83, 0.9);
+	height: 1000px;
+	.quoteBox
+	{
+		height: 6rem;
+	}
+	.box
+	{
+		height: 10rem;
+		width: 100%;
+		display: table;
+		
+		.avatarBox
+		{
+			display: table-cell;
+			vertical-align:middle;
+			.avatar
+			{
+				margin: 0 auto;
+				border: 5px solid $liteMainColor2;
+				width: 6rem;
+				height: 6rem;
+				background-position: center center;
+				background-size: cover;
+				border-radius: 50%;
+				cursor: pointer;
+				-webkit-transition:0.3s ease all;
+			     -moz-transition:0.3s ease all;
+			      -ms-transition:0.3s ease all;
+			       -o-transition:0.3s ease all;
+			          transition:0.3s ease all;
+			}
+			.avatar:hover
+			{
+				
+				width: 8rem;
+				height: 8rem;
+				-webkit-transition:0.3s ease all;
+			     -moz-transition:0.3s ease all;
+			      -ms-transition:0.3s ease all;
+			       -o-transition:0.3s ease all;
+			          transition:0.3s ease all;
+			}
+			
+		}
+		
+		&.right
+		{
+			text-align: left;
+		}
+	}
+	
 }
