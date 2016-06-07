@@ -18,7 +18,30 @@ $(function() {
 
 function imReady()
 {
-	
-	
+	$("#quotes .avatarBox .avatar").click(function()
+  {
+    var idx = $(this).attr('idx');
+    if($('#quotes .speechBubble[idx="'+idx+'"]').hasClass('show'))
+    {
+      $('#quotes .speechBubble').removeClass('show');
+      $('#quotes .speechBubble[idx="'+idx+'"]').removeClass('show');
+    }
+    else
+    {
+      $('#quotes .speechBubble').removeClass('show');
+      $('#quotes .speechBubble[idx="'+idx+'"]').addClass('show');
+    }
+  });
+
+  // $("#quotes .avatarBox .avatar").hoverIntent( 
+  //   function(elem)
+  //   {
+      
+
+  //   },
+  //   function(elem)
+  //   {
+  //     console.log(this);
+  //   } );	
 
 }
