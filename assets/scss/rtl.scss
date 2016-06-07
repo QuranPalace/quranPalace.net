@@ -103,3 +103,36 @@ $mainFont: IRANSans;
     font-family: $mainFont;
   }
 }
+
+.langButton
+{
+  font-family: $mainFont;
+  left: 3rem;
+  right: auto;
+}
+.menuPlate
+{
+  position: absolute;
+  right: 0px;
+  left: auto;
+  top: 0px;
+  height: 100vh;
+  tr
+  {
+    td
+    {
+      padding-left: 0rem;
+      padding-right: 2rem;
+      .menuItem
+      {
+        p
+        {
+          color: $mainTextColor;
+          text-align: center;
+          margin: 0px;
+          font-family: $mainFont;
+        }
+      }
+    }
+  }
+}

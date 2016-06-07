@@ -4,7 +4,7 @@ $mainColor : #94F3D3;
 $mainColor2 : #3c3b53;
 $liteMainColor2 : #41a1ca;
 $darkBlue : #0B3C53;
-
+$bubbleColor: #FD7085;
 
 $regularFont : DidactGothic;
 
@@ -200,22 +200,13 @@ body
 	width: 100%;
 	height: 10rem;
 	padding: 0px;
-	background: $darkBlue;
 	padding-left: 0.4rem;
 	padding-right: 0.4rem;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	p
-	{
-		height: 10rem;
-		overflow-y: auto;
-		text-align: justify;
-		direction: ltr;
-		padding-top: 0.4rem;
-		padding-bottom: 0.4rem;
-		color: #ffffff;
-	}
+	
+
 }
 
 .bottomBubble:after 
@@ -224,7 +215,7 @@ body
 	position: absolute;
 	border-style: solid;
 	border-width: 0 15px 15px;
-	border-color: $darkBlue transparent;
+	border-color: $bubbleColor transparent;
 	display: block;
 	width: 0;
 	z-index: 1;
@@ -238,20 +229,12 @@ body
 	width: 100%;
 	height: 10rem;
 	padding: 0px;
-	background: $darkBlue;
 	padding-left: 0.4rem;
 	padding-right: 0.4rem;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	p
-	{
-		height: 10rem;
-		overflow-y: auto;
-		text-align: justify;
-		direction: ltr;
-		color: #ffffff;
-	}
+	
 }
 
 .topBubble:after 
@@ -260,7 +243,7 @@ body
 	position: absolute;
 	border-style: solid;
 	border-width: 15px 15px 0;
-	border-color: $darkBlue transparent;
+	border-color: $bubbleColor transparent;
 	display: block;
 	width: 0;
 	z-index: 1;
@@ -271,11 +254,22 @@ body
 .speechBubble
 {
 	opacity: 0;
+	background: $bubbleColor;
 	-webkit-transition:0.3s ease opacity;
      -moz-transition:0.3s ease opacity;
       -ms-transition:0.3s ease opacity;
        -o-transition:0.3s ease opacity;
           transition:0.3s ease opacity;
+  p
+	{
+		height: 10rem;
+		overflow-y: auto;
+		text-align: justify;
+		direction: ltr;
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		color: #darkBlue;
+	}
 }
 .speechBubble.show
 {
@@ -287,3 +281,55 @@ body
           transition:0.3s ease opacity;
 }
 
+.row
+{
+	margin: 0 auto;
+}
+
+.langButton
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-family: $regularFont;
+	color: #303030;
+	position: absolute;
+	right: 3rem;
+	top: 1rem;
+}
+.menuPlate
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100vh;
+	tr
+	{
+		td
+		{
+			height: 100vh;
+			vertical-align: bottom;
+			padding-bottom: 7rem;
+			padding-left: 2rem;
+			.menuItem
+			{
+				margin-top: 0.3rem;
+				margin-bottom: 0.3rem;
+				padding-top: 0.3rem;
+				padding-bottom: 0.3rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				border-radius: 50px;
+				
+				background-color: rgba(0, 59, 83, 0.7);
+				
+				p
+				{
+					color: $mainTextColor;
+					text-align: center;
+					margin: 0px;
+					font-family: $regularFont;
+				}
+			}
+		}
+	}
+}
