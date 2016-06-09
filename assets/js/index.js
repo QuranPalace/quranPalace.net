@@ -21,6 +21,10 @@ function imReady()
 	$("#quotes .avatarBox .avatar").click(function()
   {
     var idx = $(this).attr('idx');
+    if( idx =='6')
+    {
+      return;
+    }
     if($('#quotes .speechBubble[idx="'+idx+'"]').hasClass('show'))
     {
       $('#quotes .speechBubble').removeClass('show');
@@ -32,6 +36,11 @@ function imReady()
       $('#quotes .speechBubble[idx="'+idx+'"]').addClass('show');
     }
   });
+
+  $('#goHome').click(function()
+  {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  })
 
   // $("#quotes .avatarBox .avatar").hoverIntent( 
   //   function(elem)

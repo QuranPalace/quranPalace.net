@@ -45,6 +45,15 @@ a
 		vertical-align: bottom;
 		text-align: center;
 		padding-bottom: 1rem;
+		.title
+		{
+			color: #ffffff;
+			font-family: $regularFont;
+			font-size: 3rem;
+			text-align: center;
+			margin-bottom: 4rem;
+			font-weight: normal;
+		}
 		a.arrow
 		{
 			font-family: fontello;
@@ -170,6 +179,35 @@ body
 			text-align: left;
 		}
 	}
+	::-webkit-scrollbar
+	{
+	  width:0.5rem;
+	  height:0.5rem;
+	  
+	}
+	::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment
+	{
+	  display:block;
+	  height:0;
+	  background-color:transparent;
+	}
+	::-webkit-scrollbar-track-piece
+	{
+	  background-color: transparent;
+	  -webkit-border-radius: 0;
+	  // -webkit-border-bottom-right-radius: 8px;
+	  // -webkit-border-bottom-left-radius: 8px;
+	}
+	::-webkit-scrollbar-thumb:vertical
+	{
+	  height: 3rem;
+	  background-color: #ffffff;
+	  // -webkit-border-radius: 8px;
+	  border-left: 0.2rem solid $bubbleColor;
+	  border-right: 0.2rem solid $bubbleColor;
+	  border-top: 0.3rem solid $bubbleColor;
+	  border-bottom: 0.3rem solid $bubbleColor;
+	}
 	
 }
 #sponsers
@@ -268,6 +306,7 @@ body
 		direction: ltr;
 		padding-top: 0.4rem;
 		padding-bottom: 0.4rem;
+		padding-left: 0.5rem;
 		color: #darkBlue;
 	}
 }
@@ -298,10 +337,9 @@ body
 }
 .menuPlate
 {
-	position: absolute;
+	position: fixed;
 	left: 0px;
-	top: 0px;
-	height: 100vh;
+	bottom: 0px;
 	tr
 	{
 		td
@@ -332,4 +370,16 @@ body
 			}
 		}
 	}
+	#goHome
+	{
+		cursor: pointer;
+	}
 }
+#about
+{
+	width:100%;
+}
+
+
+
+
