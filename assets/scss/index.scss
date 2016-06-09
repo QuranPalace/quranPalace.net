@@ -212,8 +212,12 @@ body
 }
 #sponsers
 {
-	background-color: rgba(20,20,20, 0.8);
+	background-color: rgba(110,250,254, 0.8);
 	padding-bottom: 10rem;
+	.title
+	{
+		color: $darkBlue;
+	}
 	.avatar
 	{
 		margin: 0 auto;
