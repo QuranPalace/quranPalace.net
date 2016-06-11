@@ -38,7 +38,7 @@ a
 	left: 0px;
 	background-position: center center;
 	background-size: cover;
-	background-image: url('/static/image/header.png');
+	background-image: url('/static/image/header.png?v=2');
 	.box
 	{
 		display:table-cell;
@@ -88,7 +88,7 @@ body
 	background-repeat: no-repeat;
 	background-position: bottom left;
 	
-	background-image: url('/static/image/mainBackground.png');
+	background-image: url('/static/image/mainBackground.png?v=2');
 	background-size: 60vw;
 }
 .parentPlate
@@ -394,7 +394,7 @@ body
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-image: url('/static/image/ourTeam.jpg');
+	background-image: url('/static/image/ourTeam.jpg?v=2');
 	display: table;
 	.content
 	{
