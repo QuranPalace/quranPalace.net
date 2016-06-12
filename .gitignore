@@ -70,3 +70,4 @@ node_modules
 .sass-cache/
 *.css.map
 
+server.bat
