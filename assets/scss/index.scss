@@ -82,17 +82,17 @@ body
 	background-position: center center;
 	background-image: url('/static/image/system.jpg');
 	background-size: contain;
-
+	overflow: hidden;
 	.textPlate
 	{
     border-radius: 50%;
-    width: 10.5rem;
-    height: 10.5rem;
+    width: 11rem;
+    height: 11rem;
     border: 2px dotted #ffffff;
     position: relative;
-    padding-top: 0.1rem;
+    padding-top: 0.35rem;
 		text-align: center;
-		padding-left: 0.1rem;
+		padding-left: 0.35rem;
 		background-color: rgba(30, 30, 30, 0.3);
 		box-shadow: 0px 3px 8px 0px #303030;
     .textBox
@@ -112,6 +112,8 @@ body
     		direction: rtl;
     		margin: 0px;
     		font-family: $regularFont;
+    		padding-left: 0.3rem;
+    		padding-right: 0.3rem;
     	}
     	.text
     	{
@@ -120,6 +122,17 @@ body
     		margin: 0px;
     		font-size: 0.8rem;
     		font-family: $regularFont;
+    		padding-left: 0.3rem;
+    		padding-right: 0.3rem;
+    	}
+    	.colored
+    	{
+    		width: 2rem;
+				height: 2rem;
+				line-height: 2rem;
+				display: inline-block;
+    		border-radius: 50%;
+    		background-color: #ffffff;
     	}
     }
 	}
@@ -128,8 +141,8 @@ body
 
 		&.smallPlate
 		{
-			width: 6.5rem;
-	    height: 6.5rem;
+			width: 7rem;
+	    height: 7rem;
 	    .textBox
 	    {
 	    	margin: auto;
@@ -154,8 +167,8 @@ body
 
 		&.mediumPlate
 		{
-			width: 11.5rem;
-	    height: 11.5rem;
+			width: 12rem;
+	    height: 12rem;
 	    .textBox
 	    {
 	    	margin: auto;
@@ -170,14 +183,13 @@ body
 	    		text-align: center;
 	    		direction: rtl;
 	    		margin: 0px;
-
 	    	}
 	    }
 		}
 		&.largePlate
 		{
-			width: 14.5rem;
-	    height: 14.5rem;
+			width: 15rem;
+	    height: 15rem;
 	    .textBox
 	    {
 	    	margin: auto;
@@ -237,7 +249,7 @@ body
 		&.second
 		{
 			position: relative;
-			bottom: -1rem;
+			bottom: 1.5rem;
 			left: 11rem;
 			.secure
 			{
@@ -340,8 +352,24 @@ body
 		{
 			width: 60%;
 		}
+		.title
+		{
+			background-color: #9EB5B7;
+			color: #ffffff;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			padding-top: 0.3rem;
+			padding-bottom: 0.3rem;
+			margin: 0px;
+			font-size: 1.2rem;
+			white-space:nowrap;
+			text-align: left;
+			border-radius: 50px;
+			display: inline-block;
+		}
 		.text
 		{
+			margin-top: 0.2rem;
 			text-align: justify;
 			direction: ltr;
 			color: $mainTextColor;

@@ -31,9 +31,15 @@ $mainFont: IRANSans;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 2rem;
+    direction: rtl;
     img
     {
       margin-left: 40%;
+    }
+    .title
+    {
+      text-align: right;
+      font-family: $mainFont;
     }
     .text
     {
