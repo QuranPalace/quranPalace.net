@@ -104,3 +104,35 @@ $mainFont: IRANSans;
     }
   }
 }
+.textPlate
+{
+  .textBox
+  {
+    .title
+    {
+      font-family: $mainFont;
+    }
+    .text
+    {
+      font-family: $mainFont;
+    }
+  }
+}
+
+#system
+{
+  .textPlate
+  {
+    .textBox
+    {
+      .title
+      {
+        font-family: $mainFont;
+      }
+      .text
+      {
+        font-family: $mainFont;
+      }
+    }
+  }
+}

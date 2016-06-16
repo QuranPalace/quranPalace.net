@@ -5,6 +5,10 @@ $mainColor2 : #3c3b53;
 $liteMainColor2 : #41a1ca;
 $darkBlue : #0B3C53;
 $bubbleColor: #FD7085;
+$systemBackgroundColor: #3D8FAB;
+$greenColor1: #E1FF3A;
+$greenColor2: #50FFD0;
+$blueColor: #78DBFE;
 
 $regularFont : DidactGothic;
 
@@ -69,6 +73,226 @@ a
 body
 {
 	// background-color: $mainColor;
+}
+#system
+{
+	width: 100%;
+	height: 100vh;
+	background-color: $systemBackgroundColor;
+	background-position: center center;
+	background-image: url('/static/image/system.jpg');
+	background-size: contain;
+
+	.textPlate
+	{
+    border-radius: 50%;
+    width: 10.5rem;
+    height: 10.5rem;
+    border: 2px dotted #ffffff;
+    position: relative;
+    padding-top: 0.1rem;
+		text-align: center;
+		padding-left: 0.1rem;
+		background-color: rgba(30, 30, 30, 0.3);
+		box-shadow: 0px 3px 8px 0px #303030;
+    .textBox
+    {
+    	margin: auto;
+    	margin-top: 0.35rem;
+    	width: 10rem;
+    	height: 10rem;
+    	border-radius: 50%;
+    	background-color: #ffffff;
+    	display: table-cell;
+			vertical-align: middle;
+    	.title
+    	{
+    		font-size: 1rem;
+    		text-align: center;
+    		direction: rtl;
+    		margin: 0px;
+    		font-family: $regularFont;
+    	}
+    	.text
+    	{
+    		text-align: center;
+    		direction: rtl;
+    		margin: 0px;
+    		font-size: 0.8rem;
+    		font-family: $regularFont;
+    	}
+    }
+	}
+	.textPlate
+	{
+
+		&.smallPlate
+		{
+			width: 6.5rem;
+	    height: 6.5rem;
+	    .textBox
+	    {
+	    	margin: auto;
+	    	margin-top: 0.35rem;
+	    	width: 6rem;
+	    	height: 6rem;
+	    	border-radius: 50%;
+	    	background-color: #ffffff;
+	    	
+	    	.title
+	    	{
+	    		font-size: 1rem;
+	    		text-align: center;
+	    		direction: rtl;
+	    		margin: 0px;
+	    		white-space:nowrap;
+
+	    	}
+	    }
+		}
+
+
+		&.mediumPlate
+		{
+			width: 11.5rem;
+	    height: 11.5rem;
+	    .textBox
+	    {
+	    	margin: auto;
+	    	margin-top: 0.35rem;
+	    	width: 11rem;
+	    	height: 11rem;
+	    	border-radius: 50%;
+	    	background-color: #ffffff;
+	    	.text
+	    	{
+	    		font-size: 0.8rem;
+	    		text-align: center;
+	    		direction: rtl;
+	    		margin: 0px;
+
+	    	}
+	    }
+		}
+		&.largePlate
+		{
+			width: 14.5rem;
+	    height: 14.5rem;
+	    .textBox
+	    {
+	    	margin: auto;
+	    	margin-top: 0.35rem;
+	    	width: 14rem;
+	    	height: 14rem;
+	    	border-radius: 50%;
+	    	background-color: #ffffff;
+	    	.text
+	    	{
+	    		font-size: 0.8rem;
+	    		text-align: center;
+	    		direction: rtl;
+	    		margin: 0px;
+
+	    	}
+	    }
+		}
+		
+	}
+	.cloudBox
+	{
+		&.first
+		{
+			position: relative;
+			top: 5.7rem;
+			left: 4rem;
+			.openService
+			{
+				left: 0px;
+				top: 0.7rem;
+				z-index: 20;
+			}
+			.bonyadElmi
+			{
+				left: 5.7rem;
+				top: -7rem;
+				z-index: 15;
+			}
+			.openData
+			{
+				top: -11.5rem;
+				z-index: 17;
+				left: 1rem;
+				.textBox
+				{
+					background-color: $greenColor1;
+				}
+			}
+			.openSource
+			{
+				top: -15rem;
+				z-index: 16;
+				left: 6.4rem;
+			}
+		}
+		&.second
+		{
+			position: relative;
+			bottom: -1rem;
+			left: 11rem;
+			.secure
+			{
+				left: 0px;
+				top: 2.4rem;
+				z-index: 20;
+				.textBox
+				{
+					background-color: $greenColor2;
+				}
+			}
+			.powerful
+			{
+				left: 5rem;
+				top: -7rem;
+				z-index: 15;
+			}
+			.free
+			{
+				top: -8.3rem;
+				z-index: 17;
+				left: 5rem;
+			}
+		}
+
+		&.third
+		{
+			position: relative;
+			top: 6rem;
+			left: 11rem;
+			.social
+			{
+				left: 0px;
+				top: 2.4rem;
+				z-index: 17;
+				
+			}
+			.software
+			{
+				left: 4.5rem;
+				top: -10.5rem;
+				z-index: 20;
+			}
+			.secureCloud
+			{
+				top: -6.3rem;
+				z-index: 18;
+				left: 13rem;
+				.textBox
+				{
+					background-color: $blueColor;
+				}
+			}
+		}
+	}
 }
 #mainPlate
 {
@@ -344,6 +568,7 @@ body
 	position: fixed;
 	left: 0px;
 	bottom: 0px;
+	z-index: 60;
 	tr
 	{
 		td
